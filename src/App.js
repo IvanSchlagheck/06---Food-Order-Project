@@ -11,7 +11,6 @@ function App() {
 
   const showCartHandler = () => {
     setCartIsShown(true);
-    console.log("working")
   };
 
   const hideCartHandler = () => {
