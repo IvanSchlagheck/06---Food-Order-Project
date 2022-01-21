@@ -1,5 +1,5 @@
 // React Import
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 // Styles Import
 import styles from "./HeaderCartButton.module.css";
 // Components Import
@@ -14,8 +14,14 @@ const HeaderCartButton = (props) => {
   },
   0);
 
+  const btnClasses = `${styles.button} ${styles.bump}`
+
+  useEffect(() => {
+    
+  }, [])
+
   return (
-    <button className={styles.button} onClick={props.onCartClick}>
+    <button className={btnClasses} onClick={props.onCartClick}>
       <span className={styles.icon}>
         <CartIcon />
       </span>
